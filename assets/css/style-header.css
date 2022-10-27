@@ -25,3 +25,23 @@
     font-weight: bold;
     color: var(--firs-color);
 }
+
+/* Medias Query*/
+@media screen and (min-width: 0) {
+    .cabecera{
+        justify-content: center;
+        padding: 0 3rem;
+    }
+    .cabecera__logo{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cabecera{
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+    .cabecera__logo{
+        display: block;
+    }
+}

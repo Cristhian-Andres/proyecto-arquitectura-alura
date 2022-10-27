@@ -1,18 +1,18 @@
 .quienes-somos{
-    text-align: center;
     padding: 5rem;
+    text-align: center;
 
 }
 .quienes-somos__titulo{
-    margin-bottom: 1rem;
     color: #8d0606;
     font-size: 3.18rem;
     font-family: Pacifico, cursive;
+    margin-bottom: 1rem;
 }
 .quienes-somos__descripcion{
+    color: #595959;
     font-weight: 200;
     font-size: 1.75rem;
-    color: #595959;
 }
 .persona{
     display: flex;
@@ -26,11 +26,14 @@
 .persona__imagen{
     height: 300px;
     width: 300px;
-    background: red;
+}
+.persona__imagen{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100%;
+    width: 300;
+    height: 300px;
 }
 /*Colocamos las imagenes de todas las personas*/
 .persona__imagen--roberta{
@@ -43,13 +46,30 @@
     background: url(../img/personas/andrea.jpg);
 }
 .persona__nombre{
-    margin: 1rem 0;
+    color: #8d0606;
     font-size: 2rem;
     font-family: Pacifico, cursive;
-    color: #8d0606;
+    margin: 1rem 0;
 }
 .persona__funcion{
-    text-transform: lowercase;
     color: #595959;
     font-size: 1.25rem;
+    text-transform: lowercase;
+}
+/* Medias Query*/
+@media screen and (min-width: 0) {
+    .persona{
+        margin-bottom: 2rem;
+    }
+    .personas{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .persona{
+        margin-bottom: 2rem;
+    }
+    .personas{
+        flex-direction: row;
+    }
 }
