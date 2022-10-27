@@ -5,9 +5,9 @@
 .cabecera{
     align-items: center;
     background-color: #f9f9f9;
-    justify-content: space-between;
-    padding: 1rem;
     display: flex;
+    padding: 1rem;
+    justify-content: space-between;
 }
 .cabecera__lista{
     display: flex;
